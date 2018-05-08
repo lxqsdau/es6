@@ -173,3 +173,11 @@ class L extends H {
 // let h = new H();
 
 let l = new L();
+
+class A {
+	a() {} // 定义在A的原型上
+	b = () => {} // 定义在实例上
+}
+console.log(A.prototype);
+const a = new A();
+console.log(a);
